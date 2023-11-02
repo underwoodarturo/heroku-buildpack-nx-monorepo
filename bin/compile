@@ -41,4 +41,5 @@ if [ "$AFFECTED" != "" && [ $AFFECTED == *"${PROJECT_NAME}"* ] ]; then
   echo "Project ${PROJECT_NAME} is affected so the built will start now."
 else
   echo "No Libraries to publish"
+  exit 1
 fi
